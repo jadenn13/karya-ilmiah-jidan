@@ -309,8 +309,8 @@
             <div class="logo">Nusantara</div>
             <div class="nav-links">
                 <a href="#" onclick="showHome()">Beranda</a>
-                <a href="#about">Tentang</a>
-                <a href="#contact">Kontak</a>
+                <a href="#about" onclick="showAbout()">Tentang</a>
+                <a href="#contact" onclick="showContact()">Kontak</a>
             </div>
         </div>
     </nav>
@@ -378,7 +378,7 @@
         <!-- Content Sections -->
         <section id="content-bahasa" class="content-section">
             <h2>Bahasa dan Identitas Nasional</h2>
-            <!-- Konten untuk Bahasa -->
+            
             <p>Bahasa Indonesia memiliki peran yang sangat penting dalam membentuk identitas nasional Indonesia pasca kemerdekaan. Sumpah Pemuda 28 Oktober 1928 menjadi tonggak sejarah ketika para pemuda dari berbagai daerah di Nusantara bersumpah untuk berbahasa satu yaitu bahasa Indonesia.</p>
             
             <div class="quote">
@@ -403,7 +403,7 @@
         
         <section id="content-sejarah" class="content-section">
             <h2>Multikulturalisme dalam Sejarah Indonesia</h2>
-            <!-- Konten untuk Sejarah -->
+            
             <p>Indonesia dikenal dengan semboyan "Bhinneka Tunggal Ika" yang berarti berbeda-beda tetapi tetap satu. Semboyan ini mencerminkan realitas sejarah nusantara yang sejak lama telah menjadi tempat pertemuan berbagai budaya dunia.</p>
             
             <p>Bukti-bukti arkeologis dan catatan sejarah menunjukkan bahwa kepulauan nusantara sejak abad ke-7 telah menjadi pusat perdagangan internasional yang menghubungkan Arab, Persia, India, Tiongkok, dan berbagai kawasan di Asia Tenggara.</p>
@@ -431,7 +431,7 @@
         
         <section id="content-ppkn" class="content-section">
             <h2>Pancasila dan Kearifan Lokal</h2>
-            <!-- Konten untuk PPKn -->
+            
             <p>Pancasila sebagai dasar negara Indonesia tidak muncul dari ruang hampa. Lima sila yang menjadi landasan ideologi bangsa memiliki akar yang dalam pada tradisi dan kearifan lokal masyarakat nusantara selama berabad-abad.</p>
             
             <div class="quote">
@@ -471,7 +471,7 @@
         
         <section id="content-sosiologi" class="content-section">
             <h2>Gotong Royong: Akar Solidaritas Sosial</h2>
-            <!-- Konten untuk Sosiologi -->
+            
             <p>Gotong royong adalah salah satu bentuk modal sosial yang menjadi ciri khas masyarakat Indonesia. Praktik kerja sama komunal ini telah ada sejak lama dan memiliki berbagai variasi nama dan bentuk di berbagai daerah di nusantara.</p>
             
             <div class="quote">
@@ -505,19 +505,33 @@
             
             <a href="#" class="back-btn" onclick="showHome()">Kembali</a>
         </section>
+
+        <!-- New sections for "Tentang" and "Kontak" -->
+        <section id="about" style="display: none;">
+            <h2>Tentang</h2>
+            <p>Ini adalah situs web yang mengeksplorasi peradaban Nusantara dari berbagai perspektif disiplin ilmu seperti Bahasa, Sejarah, PPKn, dan Sosiologi. Tujuannya untuk memberikan pemahaman yang lebih mendalam tentang identitas dan budaya Indonesia.</p>
+            <a href="#" class="back-btn" onclick="showHome()">Kembali</a>
+        </section>
+
+        <section id="contact" style="display: none;">
+            <h2>Kontak</h2>
+            <p>Untuk pertanyaan atau informasi lebih lanjut, silakan hubungi:</p>
+            <p>Email: Jidanjaelani13@gmail.com</p>
+            <a href="#" class="back-btn" onclick="showHome()">Kembali</a>
+        </section>
     </main>
     
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="#">Beranda</a>
-                <a href="#about">Tentang</a>
-                <a href="#contact">Kontak</a>
+                <a href="#" onclick="showHome()">Beranda</a>
+                <a href="#about" onclick="showAbout()">Tentang</a>
+                <a href="#contact" onclick="showContact()">Kontak</a>
             </div>
             <p>© 2025 Peradaban Nusantara. Hak Cipta Dilindungi.</p>
             <div class="creator-info">
                 <p>Dibuat oleh: JIDAN JAELANI</p>
-                <p>Email: [email protected]</p>
+                <p>Email: Jidanjaelani13@gmail.com</p>
             </div>
         </div>
     </footer>
@@ -543,6 +557,8 @@
         function showContent(id) {
             // Hide home section
             document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
             
             // Hide all content sections
             const contentSections = document.querySelectorAll('.content-section');
@@ -561,6 +577,8 @@
         function showHome() {
             // Show home section
             document.getElementById('home').style.display = 'block';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
             
             // Hide all content sections
             const contentSections = document.querySelectorAll('.content-section');
@@ -569,6 +587,34 @@
             });
             
             // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show about function
+        function showAbout() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'block';
+            document.getElementById('contact').style.display = 'none';
+            
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show contact function
+        function showContact() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'block';
+            
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
