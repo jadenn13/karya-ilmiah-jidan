@@ -294,7 +294,9 @@
 <body>
     <header>
         <div class="animated-bg">
-            <!-- Add animated circles here if needed -->
+            <div class="animated-circle" style="width: 100px; height: 100px; top: 10%; left: 20%; animation-delay: 0s;"></div>
+            <div class="animated-circle" style="width: 150px; height: 150px; top: 60%; left: 70%; animation-delay: 2s;"></div>
+            <div class="animated-circle" style="width: 80px; height: 80px; top: 30%; left: 80%; animation-delay: 4s;"></div>
         </div>
         <div class="header-content">
             <h1>Peradaban Nusantara</h1>
@@ -319,11 +321,190 @@
             <p>Pelajari keunikan Nusantara melalui lensa berbagai disiplin ilmu yang saling terhubung.</p>
             
             <div class="card-container">
-                <!-- Add card sections here -->
+                <div class="card" onclick="showContent('bahasa')">
+                    <div class="card-img bahasa-img">
+                        <div class="icon">📚</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bahasa dan Identitas Nasional</h3>
+                        <p>Bagaimana bahasa Indonesia membentuk identitas nasional pasca kemerdekaan.</p>
+                        <span class="tag">Bahasa</span>
+                        <span class="tag">Sejarah</span>
+                        <span class="tag">PPKn</span>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="showContent('sejarah')">
+                    <div class="card-img sejarah-img">
+                        <div class="icon">🏛️</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Multikulturalisme dalam Sejarah Indonesia</h3>
+                        <p>Jejak keberagaman budaya dalam perjalanan sejarah bangsa Indonesia.</p>
+                        <span class="tag">Sejarah</span>
+                        <span class="tag">Sosiologi</span>
+                        <span class="tag">PPKn</span>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="showContent('ppkn')">
+                    <div class="card-img ppkn-img">
+                        <div class="icon">🦅</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pancasila dan Kearifan Lokal</h3>
+                        <p>Menemukan akar nilai-nilai Pancasila dalam tradisi kearifan lokal nusantara.</p>
+                        <span class="tag">PPKn</span>
+                        <span class="tag">Sejarah</span>
+                        <span class="tag">Sosiologi</span>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="showContent('sosiologi')">
+                    <div class="card-img sosiologi-img">
+                        <div class="icon">👥</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Gotong Royong: Akar Solidaritas Sosial</h3>
+                        <p>Menelusuri tradisi gotong royong sebagai bentuk modal sosial Indonesia.</p>
+                        <span class="tag">Sosiologi</span>
+                        <span class="tag">Bahasa</span>
+                        <span class="tag">PPKn</span>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <!-- Content sections for each card -->
+        <!-- Content Sections -->
+        <section id="content-bahasa" class="content-section">
+            <h2>Bahasa dan Identitas Nasional</h2>
+            <!-- Konten untuk Bahasa -->
+            <p>Bahasa Indonesia memiliki peran yang sangat penting dalam membentuk identitas nasional Indonesia pasca kemerdekaan. Sumpah Pemuda 28 Oktober 1928 menjadi tonggak sejarah ketika para pemuda dari berbagai daerah di Nusantara bersumpah untuk berbahasa satu yaitu bahasa Indonesia.</p>
+            
+            <div class="quote">
+                "Kami putra dan putri Indonesia, menjunjung bahasa persatuan, bahasa Indonesia."
+            </div>
+            
+            <p>Dari perspektif <strong>sosiolinguistik</strong>, fenomena ini sangat menarik karena:</p>
+            <ul>
+                <li>Indonesia memiliki lebih dari 700 bahasa daerah</li>
+                <li>Bahasa Melayu (cikal bakal bahasa Indonesia) dipilih sebagai bahasa persatuan meskipun bukan bahasa dengan penutur terbanyak</li>
+                <li>Pilihan bahasa nasional menjadi bentuk perlawanan terhadap kolonialisme</li>
+            </ul>
+            
+            <p>Dalam konteks <strong>PPKn</strong>, pemilihan bahasa Indonesia sebagai bahasa nasional merupakan implementasi dari prinsip persatuan dan kesatuan. Bahasa menjadi alat pemersatu yang melampaui perbedaan suku, agama, dan budaya yang ada di nusantara.</p>
+            
+            <p>Secara <strong>sosiologis</strong>, bahasa Indonesia menjadi simbol identitas kolektif bangsa yang baru merdeka. Bahasa mengkonstruksi realitas sosial dan membentuk cara pandang masyarakat terhadap dunia. Penggunaan bahasa Indonesia dalam dokumen resmi, pendidikan, dan media massa secara bertahap membentuk kesadaran nasional yang baru.</p>
+            
+            <p>Perjalanan bahasa Indonesia pun terus berkembang, dari bahasa politik menjadi bahasa administrasi, pendidikan, sastra, dan ilmu pengetahuan. Pemilihan kata, pengembangan istilah, dan perubahan ejaan mencerminkan dinamika sejarah, politik, dan budaya bangsa Indonesia.</p>
+            
+            <a href="#" class="back-btn" onclick="showHome()">Kembali</a>
+        </section>
+        
+        <section id="content-sejarah" class="content-section">
+            <h2>Multikulturalisme dalam Sejarah Indonesia</h2>
+            <!-- Konten untuk Sejarah -->
+            <p>Indonesia dikenal dengan semboyan "Bhinneka Tunggal Ika" yang berarti berbeda-beda tetapi tetap satu. Semboyan ini mencerminkan realitas sejarah nusantara yang sejak lama telah menjadi tempat pertemuan berbagai budaya dunia.</p>
+            
+            <p>Bukti-bukti arkeologis dan catatan sejarah menunjukkan bahwa kepulauan nusantara sejak abad ke-7 telah menjadi pusat perdagangan internasional yang menghubungkan Arab, Persia, India, Tiongkok, dan berbagai kawasan di Asia Tenggara.</p>
+            
+            <div class="quote">
+                "Sejarah Indonesia adalah sejarah perjumpaan dan percampuran berbagai identitas budaya yang terus menerus."
+            </div>
+            
+            <p>Dari perspektif <strong>sosiologi</strong>, masyarakat Indonesia terbentuk melalui proses akulturasi dan asimilasi budaya yang berlangsung selama berabad-abad. Berbagai agama seperti Hindu, Buddha, Islam, Kristen, dan Katolik datang secara bergelombang dan beradaptasi dengan kearifan lokal, menciptakan bentuk-bentuk budaya hibrid yang unik.</p>
+            
+            <p>Dalam konteks <strong>PPKn</strong>, pengakuan atas keberagaman budaya menjadi salah satu prinsip dasar dalam kehidupan berbangsa dan bernegara di Indonesia. Pendiri bangsa menyadari bahwa Indonesia tidak dapat dibangun di atas dominasi satu kelompok etnis atau agama tertentu.</p>
+            
+            <p>Dari perspektif <strong>linguistik</strong>, pengaruh berbagai budaya dapat dilihat dari banyaknya kosakata serapan dalam bahasa Indonesia:</p>
+            <ul>
+                <li>Dari bahasa Sanskerta: agama, desa, suci, dewa</li>
+                <li>Dari bahasa Arab: waktu, kitab, selamat, musyawarah</li>
+                <li>Dari bahasa Portugis: bendera, mentega, meja, kemeja</li>
+                <li>Dari bahasa Belanda: kantor, notaris, rokok, kopi</li>
+            </ul>
+            
+            <p>Pembelajaran sejarah multikulturalisme Indonesia mengajarkan kita bahwa identitas nasional Indonesia bukan sesuatu yang kaku dan homogen, melainkan identitas yang cair, dinamis, dan terus bernegosiasi dengan berbagai pengaruh budaya.</p>
+            
+            <a href="#" class="back-btn" onclick="showHome()">Kembali</a>
+        </section>
+        
+        <section id="content-ppkn" class="content-section">
+            <h2>Pancasila dan Kearifan Lokal</h2>
+            <!-- Konten untuk PPKn -->
+            <p>Pancasila sebagai dasar negara Indonesia tidak muncul dari ruang hampa. Lima sila yang menjadi landasan ideologi bangsa memiliki akar yang dalam pada tradisi dan kearifan lokal masyarakat nusantara selama berabad-abad.</p>
+            
+            <div class="quote">
+                "Pancasila adalah kristalisasi nilai-nilai luhur yang hidup dalam masyarakat nusantara sejak zaman dahulu."
+            </div>
+            
+            <p>Dari perspektif <strong>sejarah</strong>, Bung Karno dalam pidatonya pada 1 Juni 1945 menegaskan bahwa Pancasila digali dari bumi Indonesia sendiri. Berikut beberapa contoh bagaimana nilai-nilai Pancasila tercermin dalam kearifan lokal:</p>
+            
+            <ol>
+                <li><strong>Ketuhanan Yang Maha Esa</strong>
+                    <p>Masyarakat nusantara sejak lama mengenal konsep ketuhanan yang bersifat inklusif. Misalnya dalam tradisi Jawa dikenal konsep "manunggaling kawula Gusti" (bersatunya manusia dengan Tuhan), di Minangkabau dikenal "adat basandi syarak, syarak basandi Kitabullah" (adat bersendikan agama, agama bersendikan kitab Allah).</p>
+                </li>
+                
+                <li><strong>Kemanusiaan yang Adil dan Beradab</strong>
+                    <p>Nilai-nilai kemanusiaan tercermin dalam berbagai tradisi seperti "tepa selira" (tenggang rasa) dalam budaya Jawa, "pela gandong" di Maluku yang menekankan persaudaraan lintas agama, dan "dalihan na tolu" dalam masyarakat Batak yang mengatur keseimbangan hubungan sosial.</p>
+                </li>
+                
+                <li><strong>Persatuan Indonesia</strong>
+                    <p>Konsep "menjaga tanah air" sudah dikenal dalam berbagai budaya seperti "bumi nyicingan" (tanah leluhur) dalam tradisi Sunda atau "tanah tumpah darah" yang merupakan istilah umum di berbagai daerah di nusantara.</p>
+                </li>
+                
+                <li><strong>Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan</strong>
+                    <p>Tradisi musyawarah mufakat telah lama hidup dalam masyarakat Indonesia, seperti "rembug desa" di Jawa, "kerapatan adat" di Minangkabau, dan "saniri" di Maluku.</p>
+                </li>
+                
+                <li><strong>Keadilan Sosial bagi Seluruh Rakyat Indonesia</strong>
+                    <p>Nilai keadilan sosial tercermin dalam berbagai praktik seperti "bagi hasil" dalam pertanian, "jimpitan" (menyisihkan beras untuk kepentingan bersama) di Jawa, atau "mapalus" (kerja sama ekonomi) di Minahasa.</p>
+                </li>
+            </ol>
+            
+            <p>Dari perspektif <strong>sosiolinguistik</strong>, banyak istilah dalam bahasa daerah yang mencerminkan nilai-nilai Pancasila telah diserap ke dalam bahasa Indonesia atau menjadi bagian dari kosakata ideologi nasional.</p>
+            
+            <p>Dalam konteks <strong>sosiologi</strong>, Pancasila menjadi "jembatan" yang menghubungkan berbagai nilai tradisional dengan kebutuhan negara modern, menciptakan identitas nasional yang berakar pada kearifan lokal namun tetap terbuka terhadap perkembangan zaman.</p>
+            
+            <a href="#" class="back-btn" onclick="showHome()">Kembali</a>
+        </section>
+        
+        <section id="content-sosiologi" class="content-section">
+            <h2>Gotong Royong: Akar Solidaritas Sosial</h2>
+            <!-- Konten untuk Sosiologi -->
+            <p>Gotong royong adalah salah satu bentuk modal sosial yang menjadi ciri khas masyarakat Indonesia. Praktik kerja sama komunal ini telah ada sejak lama dan memiliki berbagai variasi nama dan bentuk di berbagai daerah di nusantara.</p>
+            
+            <div class="quote">
+                "Gotong royong adalah kehidupan, gotong royong adalah pembangunan, gotong royong adalah Indonesia." - Soekarno
+            </div>
+            
+            <p>Dari perspektif <strong>sosiologi</strong>, gotong royong merupakan bentuk solidaritas mekanik (menggunakan istilah Durkheim) yang menjadi perekat sosial masyarakat tradisional. Beberapa variasi gotong royong di Indonesia:</p>
+            <ul>
+                <li><strong>Sambatan</strong> (Jawa): kerja sama membangun rumah</li>
+                <li><strong>Mapalus</strong> (Minahasa): kerja sama dalam pertanian dan upacara adat</li>
+                <li><strong>Parelek</strong> (Sunda): mengumpulkan sumbangan untuk kepentingan bersama</li>
+                <li><strong>Batobo</strong> (Riau): kerja sama mengolah sawah</li>
+                <li><strong>Marsiurupan</strong> (Batak): kerja sama membantu keluarga yang sedang berduka</li>
+            </ul>
+            
+            <p>Secara <strong>linguistik</strong>, istilah "gotong royong" berasal dari bahasa Jawa yang kemudian diserap menjadi kosakata nasional dalam bahasa Indonesia. Ini menunjukkan bagaimana nilai-nilai lokal dapat terangkat menjadi nilai nasional melalui proses politik dan budaya.</p>
+            
+            <p>Dalam konteks <strong>PPKn</strong>, gotong royong dianggap sebagai manifestasi dari sila ke-3 (Persatuan Indonesia) dan sila ke-5 (Keadilan Sosial bagi Seluruh Rakyat Indonesia). Bahkan Bung Karno menyebut gotong royong sebagai intisari dari Pancasila.</p>
+            
+            <p>Dari perspektif <strong>sejarah</strong>, praktik gotong royong telah membantu masyarakat Indonesia bertahan dari berbagai kesulitan, mulai dari bencana alam hingga perjuangan kemerdekaan. Dalam perkembangannya, bentuk-bentuk gotong royong terus beradaptasi dengan konteks modernisasi dan urbanisasi.</p>
+            
+            <p>Tantangan zaman modern terhadap nilai gotong royong:</p>
+            <ul>
+                <li>Individualisme dan materialisme yang tumbuh di masyarakat perkotaan</li>
+                <li>Melemahnya ikatan komunitas akibat mobilitas penduduk</li>
+                <li>Formalisasi gotong royong menjadi program pemerintah yang kadang kehilangan spontanitas</li>
+                <li>Perubahan sistem ekonomi yang lebih mengandalkan transaksi moneter daripada pertukaran jasa</li>
+            </ul>
+            
+            <p>Namun di sisi lain, muncul bentuk-bentuk baru gotong royong seperti crowdfunding daring, relawan bencana, dan berbagai inisiatif komunitas yang menunjukkan bahwa nilai ini tetap relevan di era digital.</p>
+            
+            <a href="#" class="back-btn" onclick="showHome()">Kembali</a>
+        </section>
     </main>
     
     <footer>
@@ -336,16 +517,60 @@
             <p>© 2025 Peradaban Nusantara. Hak Cipta Dilindungi.</p>
             <div class="creator-info">
                 <p>Dibuat oleh: JIDAN JAELANI</p>
-                <p>Email: [email&#160;protected]</p>
+                <p>Email: [email protected]</p>
             </div>
         </div>
     </footer>
     
     <script>
-        // JavaScript for animations and interactivity
-        document.addEventListener('DOMContentLoaded', () => {
-            // Your JavaScript code here for animations and interactivity
+        // Add animated circles
+        window.addEventListener('DOMContentLoaded', () => {
+            const animatedBg = document.querySelector('.animated-bg');
+            for (let i = 0; i < 5; i++) {
+                const size = Math.random() * 80 + 20;
+                const circle = document.createElement('div');
+                circle.classList.add('animated-circle');
+                circle.style.width = `${size}px`;
+                circle.style.height = `${size}px`;
+                circle.style.top = `${Math.random() * 100}%`;
+                circle.style.left = `${Math.random() * 100}%`;
+                circle.style.animationDelay = `${Math.random() * 10}s`;
+                animatedBg.appendChild(circle);
+            }
         });
+        
+        // Show content function
+        function showContent(id) {
+            // Hide home section
+            document.getElementById('home').style.display = 'none';
+            
+            // Hide all content sections
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show the selected content section
+            document.getElementById(`content-${id}`).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Show home function
+        function showHome() {
+            // Show home section
+            document.getElementById('home').style.display = 'block';
+            
+            // Hide all content sections
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>
