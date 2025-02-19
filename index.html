@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Edukasi Terpadu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <h1 class="text-2xl font-bold">Portal Edukasi</h1>
+            <div class="flex space-x-4">
+                <a href="#beranda" class="hover:text-blue-200">Beranda</a>
+                <a href="#materi" class="hover:text-blue-200">Materi</a>
+                <a href="#kontak" class="hover:text-blue-200">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="beranda" class="pt-20 pb-10">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Pembelajaran Lintas Disiplin</h1>
+                <p class="text-gray-600 mb-6">Integrasi Bahasa Indonesia, Sejarah, PPKn, dan Sosiologi</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Materi Section -->
+        <section id="materi" class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-center">Materi Pembelajaran</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card" onclick="showContent('bahasa')">BI - Bahasa Indonesia</div>
+                <div class="card" onclick="showContent('sejarah')">SJ - Sejarah</div>
+                <div class="card" onclick="showContent('ppkn')">PK - PPKn</div>
+                <div class="card" onclick="showContent('sosiologi')">SO - Sosiologi</div>
+            </div>
+        </section>
+
+        <!-- Content Display Section -->
+        <section id="contentDisplay" class="hidden bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h2 id="contentTitle" class="text-2xl font-bold"></h2>
+                <button onclick="hideContent()" class="text-gray-500 hover:text-gray-700">&times; Tutup</button>
+            </div>
+            <div id="contentBody" class="prose max-w-none"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Portal Edukasi Terpadu</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
